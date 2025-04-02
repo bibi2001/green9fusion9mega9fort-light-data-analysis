@@ -1,2 +1,3 @@
-# green9fusion9mega9fort-light-data-analysis
-A data-analysis project by bibi2001
+# Data Analysis Project
+
+A Python project for analyzing and visualizing data.
