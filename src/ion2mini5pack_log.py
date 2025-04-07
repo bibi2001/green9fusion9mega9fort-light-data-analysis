@@ -79,3 +79,25 @@ class Stack:
     
     def is_empty(self):
         return len(self.items) == 0
+
+# Update at 2025-04-08 04:21:08
+# Improved performance
+# Updated the code with new features
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+    
+    def append(self, data):
+        new_node = Node(data)
+        if not self.head:
+            self.head = new_node
+            return
+        current = self.head
+        while current.next:
+            current = current.next
+        current.next = new_node
