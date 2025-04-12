@@ -156,3 +156,18 @@ def bubble_sort(arr):
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
     return arr
+
+# Update at 2025-04-12 14:55:07
+# Refactored the code
+# Added some random functionality
+
+def read_file_lines(filename):
+    try:
+        with open(filename, 'r') as file:
+            return file.readlines()
+    except FileNotFoundError:
+        return []
+
+def write_file_lines(filename, lines):
+    with open(filename, 'w') as file:
+        file.writelines(lines)
