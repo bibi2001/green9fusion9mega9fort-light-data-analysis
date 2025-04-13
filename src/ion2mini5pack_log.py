@@ -195,3 +195,13 @@ class LinkedList:
         while current.next:
             current = current.next
         current.next = new_node
+
+# Update at 2025-04-13 15:28:04
+# Improved performance
+# Updated the code with new features
+
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n-1)
