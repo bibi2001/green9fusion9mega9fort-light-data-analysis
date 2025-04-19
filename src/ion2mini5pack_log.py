@@ -293,3 +293,16 @@ async def fetch_data_async(url):
 async def process_multiple_urls(urls):
     tasks = [fetch_data_async(url) for url in urls]
     return await asyncio.gather(*tasks)
+
+# Update at 2025-04-19 13:20:09
+# Added unit tests
+# Refactored the code
+import json
+
+def save_to_json(data, filename):
+    with open(filename, 'w') as f:
+        json.dump(data, f, indent=4)
+
+def load_from_json(filename):
+    with open(filename, 'r') as f:
+        return json.load(f)
