@@ -344,3 +344,20 @@ def is_prime(n):
         if n % i == 0:
             return False
     return True
+
+# Update at 2025-04-22 02:44:08
+# Refactored the code
+# Optimized the algorithm
+
+
+def binary_search(arr, target):
+    left, right = 0, len(arr) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1
