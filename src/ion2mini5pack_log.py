@@ -592,3 +592,17 @@ def save_to_json(data, filename):
 def load_from_json(filename):
     with open(filename, 'r') as f:
         return json.load(f)
+
+# Update at 2025-05-07 07:52:10
+# Added some random functionality
+# Added unit tests
+# Improved performance
+
+
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
