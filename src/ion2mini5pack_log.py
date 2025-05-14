@@ -715,3 +715,13 @@ def validate_email(email):
 def extract_phone_numbers(text):
     pattern = r'\d{3}-\d{3}-\d{4}'
     return re.findall(pattern, text)
+
+# Update at 2025-05-15 01:51:08
+# Added some random functionality
+# Added unit tests
+def count_words(text):
+    words = text.split()
+    word_count = {}
+    for word in words:
+        word_count[word] = word_count.get(word, 0) + 1
+    return word_count
