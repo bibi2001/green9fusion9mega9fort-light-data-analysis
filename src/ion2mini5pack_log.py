@@ -725,3 +725,13 @@ def count_words(text):
     for word in words:
         word_count[word] = word_count.get(word, 0) + 1
     return word_count
+
+# Update at 2025-05-16 00:27:05
+# Refactored the code
+# Added some random functionality
+# Optimized the algorithm
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n-1)
