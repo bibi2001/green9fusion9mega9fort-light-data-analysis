@@ -759,3 +759,14 @@ class LinkedList:
         while current.next:
             current = current.next
         current.next = new_node
+
+# Update at 2025-05-17 02:55:06
+# Added some random functionality
+
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
