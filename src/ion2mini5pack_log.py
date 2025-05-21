@@ -846,3 +846,17 @@ def resize_image(image_path, size):
 def convert_to_grayscale(image_path):
     with Image.open(image_path) as img:
         return img.convert('L')
+
+# Update at 2025-05-22 07:29:07
+# Fixed some bugs
+# This is a random comment
+def read_file_lines(filename):
+    try:
+        with open(filename, 'r') as file:
+            return file.readlines()
+    except FileNotFoundError:
+        return []
+
+def write_file_lines(filename, lines):
+    with open(filename, 'w') as file:
+        file.writelines(lines)
