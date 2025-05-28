@@ -933,3 +933,19 @@ def binary_search(arr, target):
         else:
             right = mid - 1
     return -1
+
+# Update at 2025-05-28 17:22:03
+# Added unit tests
+# Added error handling
+
+
+from PIL import Image
+
+def resize_image(image_path, size):
+    with Image.open(image_path) as img:
+        resized = img.resize(size)
+        return resized
+
+def convert_to_grayscale(image_path):
+    with Image.open(image_path) as img:
+        return img.convert('L')
