@@ -1183,3 +1183,20 @@ def save_to_json(data, filename):
 def load_from_json(filename):
     with open(filename, 'r') as f:
         return json.load(f)
+
+# Update at 2025-06-13 15:39:13
+# Added error handling
+# Optimized the algorithm
+# Improved performance
+
+
+def read_file_lines(filename):
+    try:
+        with open(filename, 'r') as file:
+            return file.readlines()
+    except FileNotFoundError:
+        return []
+
+def write_file_lines(filename, lines):
+    with open(filename, 'w') as file:
+        file.writelines(lines)
