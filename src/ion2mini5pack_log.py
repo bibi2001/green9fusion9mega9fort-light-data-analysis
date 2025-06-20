@@ -1267,3 +1267,12 @@ def bubble_sort(arr):
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
     return arr
+
+# Update at 2025-06-20 20:01:06
+# Optimized the algorithm
+def count_words(text):
+    words = text.split()
+    word_count = {}
+    for word in words:
+        word_count[word] = word_count.get(word, 0) + 1
+    return word_count
