@@ -1297,3 +1297,14 @@ def is_prime(n):
         if n % i == 0:
             return False
     return True
+
+# Update at 2025-06-25 08:28:08
+# Updated the code with new features
+# This is a random comment
+# Added some random functionality
+
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n-1)
