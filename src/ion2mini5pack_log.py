@@ -1549,3 +1549,18 @@ def is_prime(n):
         if n % i == 0:
             return False
     return True
+
+# Update at 2025-10-19 04:25:10
+# Refactored the code
+# Updated the code with new features
+# This is a random comment
+
+import json
+
+def save_to_json(data, filename):
+    with open(filename, 'w') as f:
+        json.dump(data, f, indent=4)
+
+def load_from_json(filename):
+    with open(filename, 'r') as f:
+        return json.load(f)
